@@ -55,8 +55,8 @@ export default function Component() {
   }
 
   return (
-    <div className="container mx-auto p-4 bg-gradient-to-r from-blue-50 to-pink-50 min-h-screen">
-      <h1 className="text-4xl font-bold text-center mb-8 text-blue-800">Dynamic CV Builder</h1>
+    <div className="container mx-auto p-4 bg-gradient-to-r from-blue-50 to-white min-h-screen">
+      <h1 className="text-4xl font-bold text-center mb-8 text-blue-600">Dynamic CV Builder</h1>
       <div className="grid md:grid-cols-2 gap-8">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -123,7 +123,7 @@ export default function Component() {
         >
           <Card className="bg-white/70 backdrop-blur-md shadow-xl">
             <CardContent className="p-6">
-              <h2 className="text-2xl font-bold mb-4 text-blue-800">{cv.name || 'Your Name'}</h2>
+              <h2 className="text-2xl font-bold mb-4 text-blue-600">{cv.name || 'Your Name'}</h2>
               <p className="text-sm text-gray-600 mb-2">{cv.email}</p>
               <p className="text-sm text-gray-600 mb-4">{cv.phone}</p>
               <h3 className="text-lg font-semibold mb-2 text-blue-700">Professional Summary</h3>
